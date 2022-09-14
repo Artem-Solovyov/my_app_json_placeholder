@@ -1,0 +1,12 @@
+.container {
+  width: 500px;
+  margin: 100px auto;
+  padding: 50px;
+  background-color: aquamarine;
+  border: 2px solid teal;
+  text-align: left;
+}
+.text {
+  text-indent: 20px;
+  margin: 15px 0;
+}

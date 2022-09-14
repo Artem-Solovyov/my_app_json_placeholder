@@ -1,0 +1,15 @@
+.pagination {
+  margin: 40px 0;
+}
+
+.number {
+  border: 1px solid teal;
+  padding: 10px;
+  margin: 0 2px;
+  text-align: center;
+  cursor: pointer;
+}
+.page_active {
+  font-weight: bold;
+  background-color: lavender;
+}
