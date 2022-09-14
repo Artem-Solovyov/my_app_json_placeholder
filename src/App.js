@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import {BrowserRouter, HashRouter, Navigate, Route, Routes} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import {privateRouter, publicRouter} from "./utils/router";
 import {AuthContext} from "./context/authContext";
@@ -20,7 +20,7 @@ function App() {
         isAuth, setIsAuth
       }}>
         <div className="App">
-          <BrowserRouter>
+          <HashRouter>
             <Navbar/>
             {isLoading
                 ? <Loader/>
@@ -36,7 +36,7 @@ function App() {
                       <Route path='/*' element={<Navigate to='/login'/>}/>
                     </Routes>
             }
-          </BrowserRouter>
+          </HashRouter>
         </div>
       </AuthContext.Provider>
   )
